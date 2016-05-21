@@ -5,13 +5,15 @@ HLcplst = zeros(1, 14);
 HLFaIE  = zeros(1,14);
 HLCSSP  = zeros(1,14);
 
-for M=1:14
+for M=13:13:65
   disp(['M=', num2str(M)])
-  [~, HLbr(M)]    = LSpaceTrans('yeast', M, 'br');
-  [~, HLplst(M)]  = LSpaceTrans('yeast', M, 'plst');
-  [~, HLcplst(M)] = LSpaceTrans('yeast', M, 'cplst');
-  [~, HLFaIE(M)]  = LSpaceTrans('yeast',M,'faie');
-  [~, HLCSSP(M)]  = LSpaceTrans('yeast',M,'cssp');
+  %[~, HLbr(M)]    = LSpaceTrans('espgame', M, 'br');
+  [~, HLplst(M)]  = LSpaceTrans('espgame', M, 'plst');
+  [~, HLcplst(M)] = LSpaceTrans('espgame', M, 'cplst');
+  %[~, HLFaIE(M)]  = LSpaceTrans('espgame',M,'faie');
+  [~, HLFaIE(M)]  = LSpaceTrans('espgame',M,'faie1000');
+  [~, HLFaIE(M)]  = LSpaceTrans('espgame',M,'faie10000');
+  %[~, HLCSSP(M)]  = LSpaceTrans('espgame',M,'cssp');
 end
 
 plot(1:M, HLbr,    'r',...
