@@ -11,8 +11,8 @@ for M=13:13:65
   [~, HLplst(M)]  = LSpaceTrans('iaprtc12', M, 'plst');
   [~, HLcplst(M)] = LSpaceTrans('iaprtc12', M, 'cplst');
   %[~, HLFaIE(M)]  = LSpaceTrans('iaprtc12',M,'faie');
-  [~, HLFaIE(M)]  = LSpaceTrans('iaprtc12',M,'faie1000');
-  [~, HLFaIE(M)]  = LSpaceTrans('iaprtc12',M,'faie10000');
+  %[~, HLFaIE(M)]  = LSpaceTrans('iaprtc12',M,'faie1000');
+  %[~, HLFaIE(M)]  = LSpaceTrans('iaprtc12',M,'faie10000');
   %[~, HLCSSP(M)]  = LSpaceTrans('iaprtc12',M,'cssp');
 end
 
